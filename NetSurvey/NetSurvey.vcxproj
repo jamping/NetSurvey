@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{42394C3D-7EE6-4232-BB2A-3A3F543C0565}</ProjectGuid>
+    <RootNamespace>NetSurvey</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>..\bin\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\ToolbarLarge.bmp" />
+    <None Include="..\..\..\ToolbarSmall.bmp" />
+    <None Include="C:\Users\OCEAN\Desktop\捕获.JPG" />
+    <None Include="I:\comm.bmp" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\04敌雷达未选.ico" />
+    <None Include="res\04敌雷达选.ico" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\comm.bmp" />
+    <None Include="res\extract_source.ico" />
+    <None Include="res\extract_source_hc.ico" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\main.bmp" />
+    <None Include="res\missiont.bmp" />
+    <None Include="res\NETHOOD.ICO" />
+    <None Include="res\NetSurvey.ico" />
+    <None Include="res\NetSurvey.rc2" />
+    <None Include="res\NetSurveyDoc.ico" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\ToolbarLarge.bmp" />
+    <None Include="res\ToolbarSmall.bmp" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ado2.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="ArmyDlg.h" />
+    <ClInclude Include="Armys.h" />
+    <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="Borders.h" />
+    <ClInclude Include="CJTreeCtrl.h" />
+    <ClInclude Include="Army.h" />
+    <ClInclude Include="ComboListCtrl.h" />
+    <ClInclude Include="CommonFunction.h" />
+    <ClInclude Include="ConTabCtrl.h" />
+    <ClInclude Include="customtree.h" />
+    <ClInclude Include="DataDlg.h" />
+    <ClInclude Include="Des.h" />
+    <ClInclude Include="DragDropListCtrl.h" />
+    <ClInclude Include="ExpandingDialog.h" />
+    <ClInclude Include="ExportExcelDlg.h" />
+    <ClInclude Include="FilePathDlg.h" />
+    <ClInclude Include="HelperObject.h" />
+    <ClInclude Include="InfoView.h" />
+    <ClInclude Include="InPlaceCombo.h" />
+    <ClInclude Include="InPlaceEdit.h" />
+    <ClInclude Include="ListCtrlEx.h" />
+    <ClInclude Include="ListViewEx.h" />
+    <ClInclude Include="Logs.h" />
+    <ClInclude Include="LogsDlg.h" />
+    <ClInclude Include="LW.h" />
+    <ClInclude Include="LWDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ModifyPassDlg.h" />
+    <ClInclude Include="MySplashThread.h" />
+    <ClInclude Include="NetSurvey.h" />
+    <ClInclude Include="NetSurveyDoc.h" />
+    <ClInclude Include="NetSurveyView.h" />
+    <ClInclude Include="PROGRESSBAR.H" />
+    <ClInclude Include="Range.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SetReadOnlyDialog.h" />
+    <ClInclude Include="SortHeaderCtrl.h" />
+    <ClInclude Include="SortListCtrl.h" />
+    <ClInclude Include="SourceBar.h" />
+    <ClInclude Include="SourceTree.h" />
+    <ClInclude Include="SplashThread.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Surveys.h" />
+    <ClInclude Include="TabbedView.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="UserLoginDlg.h" />
+    <ClInclude Include="UserManageDlg.h" />
+    <ClInclude Include="Workbook.h" />
+    <ClInclude Include="Workbooks.h" />
+    <ClInclude Include="Worksheet.h" />
+    <ClInclude Include="Worksheets.h" />
+    <ClInclude Include="ZGW.h" />
+    <ClInclude Include="ZGWDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ado2.cpp" />
+    <ClCompile Include="ArmyDlg.cpp" />
+    <ClCompile Include="Armys.cpp" />
+    <ClCompile Include="BaseObject.cpp" />
+    <ClCompile Include="CJTreeCtrl.cpp" />
+    <ClCompile Include="Army.cpp" />
+    <ClCompile Include="ComboListCtrl.cpp" />
+    <ClCompile Include="CommonFunction.cpp" />
+    <ClCompile Include="ConTabCtrl.cpp" />
+    <ClCompile Include="customtree.cpp" />
+    <ClCompile Include="DataDlg.cpp" />
+    <ClCompile Include="Des.cpp" />
+    <ClCompile Include="DragDropListCtrl.cpp" />
+    <ClCompile Include="ExpandingDialog.cpp" />
+    <ClCompile Include="ExportExcelDlg.cpp" />
+    <ClCompile Include="FilePathDlg.cpp" />
+    <ClCompile Include="HelperObject.cpp" />
+    <ClCompile Include="InfoView.cpp" />
+    <ClCompile Include="InPlaceCombo.cpp" />
+    <ClCompile Include="InPlaceEdit.cpp" />
+    <ClCompile Include="ListCtrlEx.cpp" />
+    <ClCompile Include="ListViewEx.cpp" />
+    <ClCompile Include="Logs.cpp" />
+    <ClCompile Include="LogsDlg.cpp" />
+    <ClCompile Include="LW.cpp" />
+    <ClCompile Include="LWDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="ModifyPassDlg.cpp" />
+    <ClCompile Include="MySplashThread.cpp" />
+    <ClCompile Include="NetSurvey.cpp" />
+    <ClCompile Include="NetSurveyDoc.cpp" />
+    <ClCompile Include="NetSurveyView.cpp" />
+    <ClCompile Include="PROGRESSBAR.CPP" />
+    <ClCompile Include="SetReadOnlyDialog.cpp" />
+    <ClCompile Include="SortHeaderCtrl.cpp" />
+    <ClCompile Include="SortListCtrl.cpp" />
+    <ClCompile Include="SourceBar.cpp" />
+    <ClCompile Include="SourceTree.cpp" />
+    <ClCompile Include="SplashThread.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Surveys.cpp" />
+    <ClCompile Include="TabbedView.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
+    <ClCompile Include="UserLoginDlg.cpp" />
+    <ClCompile Include="UserManageDlg.cpp" />
+    <ClCompile Include="ZGW.cpp" />
+    <ClCompile Include="ZGWDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NetSurvey.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="NetSurvey.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
